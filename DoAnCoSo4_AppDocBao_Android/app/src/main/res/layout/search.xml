@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/search1"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:id="@+id/se"
+            android:src="@drawable/sea">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/logo"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/logodocbao">
+
+        </ImageView>
+
+
+        <EditText
+            android:id="@+id/search1"
+            android:layout_width="215dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/arial2"
+            android:textSize="18sp"
+            android:inputType="text">
+
+        </EditText>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slide12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:background="#EAEBEB">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_slide"
+                android:layout_width="97dp"
+                android:layout_height="81dp"
+                android:background="#E8EAF6"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/td_slide"
+                android:layout_width="212dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="0dp"
+
+                android:layout_toEndOf="@+id/img_slide"
+                android:layout_toRightOf="@+id/img_slide"
+                android:text="This is a Sample Text. Which provides brief Note of a Mobile View."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:fontFamily="@font/gr"
+
+                android:textSize="18sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/nd_slide"
+                android:layout_width="212dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="50dp"
+                android:layout_toEndOf="@+id/img_slide"
+                android:layout_toRightOf="@+id/img_slide"
+                android:text="This is a Sample Text. Which provides brief Note of a Mobile View."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:fontFamily="@font/gi"
+
+                android:textSize="15sp"
+                android:typeface="sans" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
